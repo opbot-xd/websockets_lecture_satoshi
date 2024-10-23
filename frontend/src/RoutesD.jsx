@@ -6,7 +6,7 @@ import GamePage from "./pages/GamePage.jsx";
 import ResultPage from "./pages/ResultPage.jsx";
 
 function RoutesD() {
-  const { playerName, setPlayerName, teamName, setTeamName } = usePlayerContext();
+  const { playerName } = usePlayerContext();
   return (
     <Router>
       <Routes>
