@@ -1,0 +1,52 @@
+.game-container {
+  background-color: #ffd476;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0.1),
+    inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transform: perspective(1000px) rotateX(2deg);
+  border: 2px solid rgba(178, 112, 112, 0.1);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  overflow-y: scroll;
+}
+
+.result_heading1{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  color: black;
+  font-size: 2.5em;
+}
+
+.result_heading2{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  color: black;
+  font-size: 2em;
+}
+
+.red_win_span{
+  color: red;
+}
+
+.blue_win_span{
+  color: blue;
+}
+
+ul{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  color: black;
+  font-size: 1em;
+  column-count: 2;
+}
+
+li{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  color: black;
+  font-size: 1em;
+}

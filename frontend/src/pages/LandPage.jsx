@@ -17,7 +17,7 @@ const LandingPage = () => {
 
   return (
     <div className="game-container">
-      <h1>Welcome to the Cute Game!</h1>
+      <h1>Online Tug-Of-War</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
