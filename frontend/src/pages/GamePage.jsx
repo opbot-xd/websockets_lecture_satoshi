@@ -182,9 +182,9 @@ function GamePage(){
     <PlayerTile playerName={playerName} team={teamName} />
     {Loading ? <h1 className="plz_wait_now" style={{color:'black'}}>Game is Starting Please Wait!</h1> :<>
       <div className="game_div">
-        <div className="team_red_div">Red Team</div>
+        <div className="team_red_div"><p style={{marginTop:'45px'}}>Red Team</p></div>
         <div className="blue_bar"></div>
-        <div className="team_blue_div">Blue Team</div>
+        <div className="team_blue_div"><p style={{marginTop:'45px'}}>Blue Team</p></div>
       </div>
       
       <button className="game_button" onClick={pull_the_rope}>

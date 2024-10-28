@@ -22,8 +22,10 @@ function ResultPage(){
 
   }
   return(<>
+  <div style={{display:'flex',flexDirection:'column', alignItems: 'center'}}>
     <ResultsTile winner={winner} list_of_winners = {list_of_winners}/>
-    <button onClick={backToHome}>Back to Home</button>
+    <button  style={{ width: 'fit-content' }} onClick={backToHome}>Back to Home</button>
+    </div>
   </>)
 }
 
