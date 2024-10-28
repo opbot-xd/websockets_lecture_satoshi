@@ -5,14 +5,20 @@ import { Server } from 'socket.io';
 
 const app = express();
 const port = 5000
-app.use(cors());
+app.use(cors({
+  origin: "https://websockets-lecture-satoshi-3qkh.vercel.app/",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true
+}));
 app.use(express.json());
 const server = http.createServer(app)
 const io = new Server(server, {
-    cors:{
-        origin: "*",
-        methods:["GET", "POST"],
-    }
+  cors: {
+    origin: "https://websockets-lecture-satoshi-3qkh.vercel.app/",
+    methods: ["GET", "POST"],
+    credentials: true
+  }
 })
 
 let players = new Map();
