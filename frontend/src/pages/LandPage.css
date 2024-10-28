@@ -8,6 +8,9 @@ body {
   height: 100vh;
   margin: 0;
   background-image: url("https://www.transparenttextures.com/patterns/connected.png");;
+  overflow-y: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .game-container {

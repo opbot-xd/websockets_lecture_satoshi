@@ -1,4 +1,4 @@
-.game-container {
+.res_container {
   background-color: #ffd476;
   border-radius: 20px;
   padding: 40px;
@@ -10,8 +10,8 @@
   transform: perspective(1000px) rotateX(2deg);
   border: 2px solid rgba(178, 112, 112, 0.1);
   backdrop-filter: blur(10px);
-  max-width: 400px;
-  overflow-y: scroll;
+  max-width: 1200px;
+  max-height: 70vh;
 }
 
 .result_heading1{
