@@ -15,7 +15,11 @@ function GamePage(){
   const {winner, setWinner, list_of_winners,setListOfWinners} = useWinnerContext();
 
   useEffect(()=>{
-    const socket = SocketIOClient('https://websockets-lecture-satoshi-oq4jprc3c-deenanksharmas-projects.vercel.app/?vercelToolbarCode=TaP7xU-rSsGI6F-')
+    const socket = SocketIOClient('wss://websockets-lecture-satoshi.vercel.app/?vercelToolbarCode=zObD_m2uD_S-Vls', {
+      transports: ['websocket'],
+      withCredentials: true,
+  });
+  
     setSocket_1(socket)
     console.log(socket)
     console.log('yaha tak aa gye hai')
